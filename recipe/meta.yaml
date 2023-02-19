@@ -1,13 +1,13 @@
 {% set name = "sos-python" %}
-{% set version = "0.18.4" %}
+{% set version = "0.20.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 56f957619cd61784ada1ae0eeca784863f2cb327400293fd4f179eede1f95f75
+  sha256: cddcb80cfc997743a895c53bbd49fe0c4adc4641157cd08ffcaa590f80d188db
 
 build:
   noarch: python
@@ -37,7 +37,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "SoS language module for Python2 and Python3"
+  summary: SoS language module for Python2 and Python3
   doc_url: https://vatlab.github.io/sos-docs/
   dev_url: https://github.com/vatlab/sos-python
 
